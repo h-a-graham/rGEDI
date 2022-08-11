@@ -38,15 +38,7 @@ if test "$with_hdf5" != "yes"; then
                          MacOS: brew install hdf5)
 fi
 
-##################
-## SZIP
-##################
-AC_CHECK_LIB( sz, SZ_BufftoBuffCompress,
-	     HAVE_LIBSZ="yes",
-	     AC_MSG_ERROR(could not find szip:
-                         Debian: sudo apt install libsz2
-                         RPM-based: sudo dnf install szip
-                         MacOS: brew install szip))
+
 
 
 
